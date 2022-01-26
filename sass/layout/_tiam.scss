@@ -16,11 +16,15 @@
 .tiam-list {
   display: flex;
   padding-left: 0;
+
+  & .item + .item {
+    margin-left: 30px;
+  }
 }
 
-.tiam-list .item + .item {
-  margin-left: 30px;
-}
+// .tiam-list .item + .item {
+//   margin-left: 30px;
+// }
 
 .tiam-title {
   color: var(--primary-text-color);
@@ -72,10 +76,15 @@
 .tiam-social-item {
   width: 44px;
   height: 44px;
+
+  & + & {
+    margin-left: 10px;
+  }
 }
-.tiam-social-item + .tiam-social-item {
-  margin-left: 10px;
-}
+
+// .tiam-social-item + .tiam-social-item {
+//   margin-left: 10px;
+// }
 
 .tiam-social-link {
   width: 100%;
@@ -90,10 +99,16 @@
   transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      fill: var(--wite-color);
+    }
 }
 
-.tiam-social-link:hover,
-.tiam-social-link:focus {
-  background-color: var(--accent-color);
-  fill: var(--wite-color);
-}
+// .tiam-social-link:hover,
+// .tiam-social-link:focus {
+//   background-color: var(--accent-color);
+//   fill: var(--wite-color);
+// }

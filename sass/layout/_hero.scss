@@ -51,9 +51,14 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-text-color);
+  }
 }
 
-.hero-button:hover,
-.hero-button:focus {
-  color: var(--primary-text-color);
-}
+// .hero-button:hover,
+// .hero-button:focus {
+//   color: var(--primary-text-color);
+// }

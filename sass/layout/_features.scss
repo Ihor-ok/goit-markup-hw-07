@@ -6,15 +6,19 @@
 .features-list {
   display: flex;
   justify-content: center;
+
+  & .item + .item {
+    margin-left: 30px;
+  }
 }
 
 .features-description {
   min-width: 270px;
 }
 
-.features-list .item + .item {
-  margin-left: 30px;
-}
+// .features-list .item + .item {
+//   margin-left: 30px;
+// }
 
 .features-item {
   color: var(--primary-text-color);
@@ -54,6 +58,10 @@
   border-radius: 4px;
 
   margin-bottom: 30px;
+
+  &:hover {
+    border: 2px solid var(--accent-color);
+  }
 }
 
 .antenna-icon:hover,
@@ -64,6 +72,6 @@
   stroke-width: 0.3px;
 }
 
-.features-icon:hover {
-  border: 2px solid var(--accent-color);
-}
+// .features-icon:hover {
+//   border: 2px solid var(--accent-color);
+// }
