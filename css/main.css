@@ -803,6 +803,10 @@ body {
   fill: var(--accent-color);
 }
 
+.icon-modal:hover {
+  fill: var(--accent-color);
+}
+
 .modal-label {
   font-size: 12px;
   line-height: 1.6;
