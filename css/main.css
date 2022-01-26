@@ -1,9 +1,3 @@
-/* колір тексту заголовків rgba(33, 33, 33, 1); */
-/* колір тексту параграфів rgba(117, 117, 117, 1); */
-/* колір фону сторінки Background #E5E5E5 */
-/* колір фону кнопки синій  rgba(33, 150, 243, 1) */
-/* колір фону кнопки сірий rgba(245, 244, 250, 1) */
-/* колір тексту кнопок білий rgba(255, 255, 255, 1) */
 :root {
   --primary-text-color: rgba(33, 33, 33, 1);
   --title-text-color: rgba(117, 117, 117, 1);
@@ -36,11 +30,17 @@ button {
   cursor: pointer;
 }
 
-.container {
-  margin: 0 auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+body {
+  color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .visually-hidden {
@@ -56,21 +56,12 @@ button {
   margin: -1px;
 }
 
-body {
-  color: var(--primary-text-color);
-
-  font-family: "Roboto", sans-serif;
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-
-.list {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
-}
-
-/* ----------------HEADER-------------------------- */
 
 .header {
   background-color: var(--wite-color);
@@ -78,7 +69,6 @@ body {
   /* height: 80px; */
   padding-top: 24px;
   padding-bottom: 25px;
-
   position: relative;
 }
 
@@ -91,7 +81,6 @@ body {
   text-align: left;
   vertical-align: Top;
   letter-spacing: 0.03em;
-
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -127,7 +116,6 @@ body {
 
 .header-site-nav a {
   color: var(--primary-text-color);
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
@@ -147,7 +135,6 @@ body {
 
 .header-auth-nav a {
   color: var(--title-text-color);
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
@@ -215,21 +202,16 @@ body {
   align-items: center;
   fill: var(--title-text-color);
 }
+
 .tel-icon {
   width: 10px;
   height: 16px;
   margin-right: 10px;
 }
 
-/* ----------------HERO-------------------------- */
-
 .hero {
   max-width: 1600;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/img-background.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-background.jpg);
   background-repeat: no-repeat;
   background-position: center;
   block-size: cover;
@@ -242,10 +224,8 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
   text-align: center;
   margin-right: auto;
   margin-left: auto;
@@ -259,20 +239,17 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0;
   border-radius: 4px;
-
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.06em;
-
   display: block;
   align-items: center;
   margin-right: auto;
   margin-left: auto;
   width: 200px;
   height: 50px;
-
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -283,10 +260,7 @@ body {
   color: var(--primary-text-color);
 }
 
-/* ----------------FEATURES-------------------------- */
-
 .features {
-  /* background-color: var(--background-features-work-color); */
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -306,10 +280,8 @@ body {
 
 .features-item {
   color: var(--primary-text-color);
-
   margin-top: 0px;
   margin-bottom: 10px;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -321,7 +293,6 @@ body {
   color: var(--title-text-color);
   margin-top: 0;
   margin-bottom: 0;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -337,10 +308,8 @@ body {
   /* position: absolute; */
   left: 215px;
   top: 774px;
-
   background: #f5f4fa;
   border-radius: 4px;
-
   margin-bottom: 30px;
 }
 
@@ -355,8 +324,6 @@ body {
 .features-icon:hover {
   border: 2px solid var(--accent-color);
 }
-
-/* ----------------WORK-------------------------- */
 
 .work {
   /* background-color: var(--background-features-work-color); */
@@ -376,7 +343,6 @@ body {
   color: var(--primary-text-color);
   margin-top: 0px;
   margin-bottom: 50px;
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -403,24 +369,19 @@ body {
   text-transform: uppercase;
   color: var(--wite-color);
   background: rgba(47, 48, 58, 0.8);
-
   display: flex;
   align-items: center;
   justify-content: center;
   width: 370px;
   height: 70px;
-
   position: absolute;
   bottom: 0;
 }
-/* ----------------TIAM-------------------------- */
 
 .tiam-card {
   width: 270px;
   background: #ffffff;
-
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -443,7 +404,6 @@ body {
   color: var(--primary-text-color);
   margin-top: 0px;
   margin-bottom: 50px;
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -458,11 +418,9 @@ body {
 
 .tiam-name {
   color: var(--primary-text-color);
-
   margin-bottom: 10px;
   margin-top: 0px;
   text-align: center;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.8;
@@ -474,7 +432,6 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
-
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
@@ -490,6 +447,7 @@ body {
   width: 44px;
   height: 44px;
 }
+
 .tiam-social-item + .tiam-social-item {
   margin-left: 10px;
 }
@@ -502,8 +460,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: rgba(175, 177, 184, 1);
-
+  fill: #afb1b8;
   transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -514,8 +471,6 @@ body {
   background-color: var(--accent-color);
   fill: var(--wite-color);
 }
-
-/* ----------------CUSTOMERS-------------------------- */
 
 .customers {
   padding-top: 94px;
@@ -540,13 +495,12 @@ body {
 .customers-link {
   width: 170px;
   height: 92px;
-  border: 1px solid rgba(175, 177, 184, 1);
+  border: 1px solid #afb1b8;
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: rgba(175, 177, 184, 1);
-
+  fill: #afb1b8;
   transition-property: border, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -557,8 +511,6 @@ body {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }
-
-/* ----------------FOOTER-------------------------- */
 
 .footer {
   background-color: var(--background-hero-footer-color);
@@ -577,13 +529,11 @@ body {
   display: block;
   color: var(--wite-color);
   margin-bottom: 20px;
-
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -600,13 +550,11 @@ body {
 
 .footer-address {
   color: var(--wite-adres-color);
-
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -614,13 +562,11 @@ body {
 
 .footer-address-factual {
   color: var(--wite-color);
-
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -644,7 +590,6 @@ body {
   text-align: center;
   display: block;
   margin-bottom: 20px;
-
   color: #ffffff;
 }
 
@@ -660,6 +605,7 @@ body {
   width: 44px;
   height: 44px;
 }
+
 .invite-social-item + .tiam-social-item {
   margin-left: 10px;
 }
@@ -673,7 +619,6 @@ body {
   align-items: center;
   justify-content: center;
   fill: var(--wite-color);
-
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -700,7 +645,6 @@ body {
   text-transform: uppercase;
   display: block;
   margin-bottom: 20px;
-
   color: var(--wite-color);
 }
 
@@ -723,7 +667,6 @@ body {
   border-radius: 4px;
   margin-left: 12px;
   padding: 10px 62px 10px 29px;
-
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -735,7 +678,6 @@ body {
 
 .icon-send {
   position: absolute;
-
   bottom: 14px;
   right: 27px;
 }
@@ -749,14 +691,11 @@ body {
   border-radius: 4px;
   background: #2f303a;
   padding: 15px 16px;
-
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: var(--wite-color);
 }
-
-/* ---------------- BACKDROP-------------------------- */
 
 .backdrop {
   position: fixed;
@@ -772,13 +711,10 @@ body {
   pointer-events: none;
 }
 
-/* ---------------- MODAL-------------------------- */
-
 .modal-order {
   width: 528px;
   min-height: 581px;
   background-color: var(--wite-color);
-
   position: absolute;
   top: 50%;
   left: 50%;
@@ -813,7 +749,6 @@ body {
   height: 30px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 50%;
-
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -827,7 +762,6 @@ body {
   min-width: 528px;
   min-height: 581px;
   background-color: var(--wite-color);
-
   position: absolute;
   top: 50%;
   left: 50%;
@@ -842,9 +776,7 @@ body {
   border-radius: 4px;
   outline: none;
   appearance: none;
-
   padding-left: 42px;
-
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -873,7 +805,6 @@ body {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
-
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -900,6 +831,7 @@ body {
   border-radius: 4px;
   outline: none;
 }
+
 .modal-label-checkbox {
   position: relative;
   display: flex;
@@ -918,13 +850,11 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0;
   border-radius: 4px;
-
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.06em;
-
   display: block;
   align-items: center;
   margin-right: auto;
@@ -957,14 +887,10 @@ body {
   border: 0;
 }
 
-/* ---------------- PORTFOLIO-------------------------- */
-
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
-/* ---------------PORTFOLIO FILTER---------------------- */
 
 .filter {
   display: flex;
@@ -985,14 +911,12 @@ body {
   padding: 6px 22px;
   border: 0;
   border-radius: 4px;
-
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
-
   transition-property: background-color, color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1002,10 +926,8 @@ body {
 .filter-button:focus {
   color: var(--wite-color);
   background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-/* ---------------PORTFOLIO PROJECTS---------------------- */
 
 .portfolio-list {
   display: flex;
@@ -1024,7 +946,6 @@ body {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
-
   padding: 20px 24px;
 }
 
@@ -1036,7 +957,6 @@ body {
   color: var(--primary-text-color);
   margin-top: 0px;
   margin-bottom: 4px;
-
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -1047,7 +967,6 @@ body {
   color: var(--title-text-color);
   margin-top: 0;
   margin-bottom: 0;
-
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
@@ -1058,9 +977,9 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .portfolio-card:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-overlay {
@@ -1074,19 +993,18 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-
   display: block;
   padding: 63px 24px;
-
   background-color: rgba(33, 150, 243, 0.9);
   color: var(--wite-color);
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-
   transform: translatey(101%);
   transition: transform 250ms ease;
 }
+
 .portfolio-card:hover .portfolio-overlay-card {
   transform: translatey(0);
 }
+/*# sourceMappingURL=main.css.map */

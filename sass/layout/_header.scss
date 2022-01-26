@@ -1,0 +1,148 @@
+.header {
+  background-color: var(--wite-color);
+  border-bottom: 1px solid #ececec;
+  /* height: 80px; */
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  position: relative;
+}
+
+.header-logo {
+  margin-right: 93px;
+  color: var(--primary-text-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  text-align: left;
+  vertical-align: Top;
+  letter-spacing: 0.03em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-logo:focus,
+.header-logo:hover {
+  color: var(--accent-color);
+}
+
+.header-logo-web {
+  color: var(--accent-color);
+}
+
+.header a {
+  color: var(--primary-text-color);
+}
+
+.header-nav {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.header-site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.header-site-nav a {
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.header-auth-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 305px;
+}
+
+.header-auth-nav .item + .item {
+  margin-left: 30px;
+}
+
+.header-auth-nav a {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.header-stydio.current {
+  color: var(--accent-color);
+}
+
+.header-stydio.current::after {
+  content: "";
+  width: 48px;
+  height: 4px;
+  background-size: contain;
+  background: #2196f3;
+  border-radius: 2px;
+  display: block;
+  position: absolute;
+  top: 76px;
+}
+
+.header-portfolio.current {
+  color: var(--accent-color);
+}
+
+.header-portfolio.current::after {
+  content: "";
+  width: 78px;
+  height: 4px;
+  background-size: contain;
+  background: #2196f3;
+  border-radius: 2px;
+  display: block;
+  position: absolute;
+  top: 76px;
+}
+
+.nav {
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav:hover,
+.nav:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.header-mail-icon {
+  display: flex;
+  align-items: center;
+  fill: var(--title-text-color);
+}
+
+.mail-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.header-tel-icon {
+  display: flex;
+  align-items: center;
+  fill: var(--title-text-color);
+}
+.tel-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
