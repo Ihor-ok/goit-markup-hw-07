@@ -8,7 +8,7 @@
   position: relative;
 }
 
-.header-logo {
+.header__logo {
   margin-right: 93px;
   color: var(--primary-text-color);
   font-family: "Raleway", sans-serif;
@@ -33,7 +33,7 @@
 //   color: var(--accent-color);
 // }
 
-.header-logo-web {
+.header__logo--web {
   color: var(--accent-color);
 }
 
@@ -41,12 +41,12 @@
   color: var(--primary-text-color);
 }
 
-.header-nav {
+.header__container {
   display: flex;
   align-items: center;
 }
 
-.header-site-nav {
+.site-nav {
   display: flex;
   align-items: center;
 
@@ -77,7 +77,7 @@
 //   letter-spacing: 0.02em;
 // }
 
-.header-auth-nav {
+.auth-nav {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -110,7 +110,7 @@
 //   letter-spacing: 0.02em;
 // }
 
-.header-stydio.current {
+.site-nav__stydio.current {
   color: var(--accent-color);
 
   &::after {
@@ -138,7 +138,7 @@
 //   top: 76px;
 // }
 
-.header-portfolio.current {
+.site-nav__portfolio.current {
   color: var(--accent-color);
 
   &::after {
@@ -184,24 +184,24 @@
 //   fill: var(--accent-color);
 // }
 
-.header-mail-icon {
+.auth-nav__mail {
   display: flex;
   align-items: center;
   fill: var(--title-text-color);
 }
 
-.mail-icon {
+.auth-nav__mail-icon {
   width: 16px;
   height: 12px;
   margin-right: 10px;
 }
 
-.header-tel-icon {
+.auth-nav__tel {
   display: flex;
   align-items: center;
   fill: var(--title-text-color);
 }
-.tel-icon {
+.auth-nav__tel-icon {
   width: 10px;
   height: 16px;
   margin-right: 10px;
